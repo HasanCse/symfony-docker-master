@@ -5,8 +5,8 @@
         <group>
             <file>file:/D:/Validation/symfony-docker-master/src/Controller/BasicRules.php</file>
             <file>file:/D:/Validation/symfony-docker-master/src/Controller/Validator.php</file>
-            <file>file:/D:/Validation/symfony-docker-master/src/Controller/instructions.txt</file>
             <file>file:/D:/Validation/symfony-docker-master/tests/ValidatorTest.php</file>
+            <file>file:/D:/Validation/symfony-docker-master/src/Controller/input.csv</file>
         </group>
     </open-files>
 </project-private>

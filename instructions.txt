@@ -1,0 +1,24 @@
+1. From command line 
+     docker pull mahmudulhasan1/symfony-docker-master_app:validator
+2. From command line 
+     docker pull mahmudulhasan1/symfony-docker-master_nginx:validator
+3. From command line 
+     docker pull mahmudulhasan1/symfony-docker-master_h2-proxy:validator
+
+4.From command line 
+     docker run -i -t mahmudulhasan1/symfony-docker-master_app:validator
+
+5. Browse to https://localhost/validator
+   It will show output of validated input.csv file
+
+6. From command line
+     php .\bin\phpunit .\tests\
+    to run test cases.
+
+7. To see code : main Validator controller is in symfony-docker-master\src\Controller
+
+8. To see test case: symfony-docker-master\tests
+
+
+* docker-compose up
+2. composer require --dev symfony/phpunit-bridge

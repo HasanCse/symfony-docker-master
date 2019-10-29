@@ -1,19 +1,10 @@
-$ git clone https://github.com/HasanCse/symfony-docker-master.git
-$cd symfony-docker-master
-$ docker-compose up
+1. $ git clone https://github.com/HasanCse/symfony-docker-master.git
 
+2. $ cd symfony-docker-master
 
-1. From command line 
-     docker pull mahmudulhasan1/symfony-docker-master_app:validator
-2. From command line 
-     docker pull mahmudulhasan1/symfony-docker-master_nginx:validator
-3. From command line 
-     docker pull mahmudulhasan1/symfony-docker-master_h2-proxy:validator
+3. $ docker-compose up
 
-4.From command line 
-     docker run -i -t mahmudulhasan1/symfony-docker-master_app:validator
-
-5. Browse to https://localhost/validator
+4. Browse to https://localhost/validator
    It will show output of validated input.csv file
 
 6. From command line
@@ -24,8 +15,7 @@ $ docker-compose up
 
 8. Input.csv file is in symfony-docker-master\src\Controller folder
 
-8. To see test case: symfony-docker-master\tests
+9. To see test case: symfony-docker-master\tests
 
- composer require --dev symfony/phpunit-bridge
 
 

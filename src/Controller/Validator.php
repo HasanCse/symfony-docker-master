@@ -2,11 +2,12 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Console\Output\OutputInterface;
 
 class Validator extends BasicRules
 {
 
-    public function index()
+    public function index(OutputInterface $output)
     {
         $attempts = array();
         $handle = fopen(dirname(__FILE__) . "/input.csv", "r");
@@ -51,7 +52,7 @@ class Validator extends BasicRules
                 'passport',
                 'identity_card',
                 'residence_permit');
-            echo '<br>';
+            $output->writeln('');
 
             if ($country_code == 'de') {
                 //If issue date greater than 2010-01-01 then expiry 10 years

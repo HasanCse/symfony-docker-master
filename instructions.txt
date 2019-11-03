@@ -1,17 +1,28 @@
-1. $ git clone https://github.com/HasanCse/symfony-docker-master.git
+1. To get source code please run the follwing command from command line.
+     
+	--$ git clone https://github.com/HasanCse/symfony-docker-master.git
 
-2. $ cd symfony-docker-master
+2. Switch to the source code directory 
+   
+   --$ cd symfony-docker-master
 
-3. $ docker-compose up
+3. Setup everyting to run the code in docker container run the following command
+   
+   ---$ docker-compose up
 
-4. Browse to https://localhost/validator
-   It will show output of validated input.csv file
+4. After completing setup run the following command to validate the input.csv file which is in Controller folder for now
+ 
+   ---$ php bin\console identification-requests:process input.csv
 
-6. From command line
-     php .\bin\phpunit .\tests\
-    to run test cases.
+6. Run the following command from command line to run test cases. I have included some failures intentionally.
+     
+	---$ php .\bin\phpunit .\tests\
+    
 
-7. To see code : main Validator controller is in symfony-docker-master\src\Controller
+7. To see code : 
+      
+	  Main Validator.php controller is in symfony-docker-master\src\Controller
+      Base controller is BasicRules.php
 
 8. Input.csv file is in symfony-docker-master\src\Controller folder
 

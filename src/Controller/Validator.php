@@ -6,7 +6,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class Validator extends BasicRules
 {
-
     public function index(OutputInterface $output)
     {
         $attempts = array();
@@ -59,7 +58,7 @@ class Validator extends BasicRules
                 if ($document_type == 'identity_card') {
                     $validYear = 10;
                 }
-                $basicRule->bascicRules($country_code, $document_type, $document_number, $document_length, $day, $weekends, $allowed_documents_for_all, $diff, $validYear, $attempts, $id_number );
+                $basicRule->bascicRules($country_code, $document_type, $document_number, $document_length, $day, $weekends, $allowed_documents_for_all, $diff, $validYear, $attempts, $id_number);
             } elseif ($country_code == 'es') {
                 //2013-02-14    15 years            passports  50001111 to 50009999 not valid
                 if (($document_type == 'passport') && ($issue_date >= new \DateTime('2013-02-14'))) {

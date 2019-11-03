@@ -15,10 +15,15 @@ class IdentificationCommand extends Command
     {
         $this->addArgument('file_name', InputArgument::REQUIRED, 'Which file you want to process?');
     }
-    
+
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-    $output->writeln(\App\Controller\Validator::index($output));
-    
+        $file_name = $input->getArgument('file_name');
+
+        if ($file_name != 'input.csv') {
+            $output->writeln('Invalid file name');
+        } else {
+            $output->writeln(\App\Controller\Validator::index($output));
+        }
     }
 }

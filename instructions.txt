@@ -10,23 +10,25 @@
    
    ---$ docker-compose up
 
-4. After completing setup run the following command to validate the input.csv file which is in Controller folder for now
+4. After completing setup run the following command to validate the input.csv file which is in Controller folder for now. Please open new command prompt and run the     following command.
  
    ---$ php bin\console identification-requests:process input.csv
 
-6. Run the following command from command line to run test cases. I have included some failures intentionally.
+6. Run the following command from command line to run test cases. I have included some failures intentionally. First time run will install necessary packages.
      
-	---$ php .\bin\phpunit .\tests\
+	---$ php bin\phpunit tests
     
 
 7. To see code : 
       
-	  Main Validator.php controller is in symfony-docker-master\src\Controller
-      Base controller is BasicRules.php
+	  Main controller is in symfony-docker-master\src\Controller\Validator.php
+      Base controller is in symfony-docker-master\src\Controller\BasicRules.php
+	  
+8. Command line code is in symfony-docker-master\src\Command\IdentificationCommand.php
 
-8. Input.csv file is in symfony-docker-master\src\Controller folder
+9. Program Input file 'Input.csv' is in symfony-docker-master\src\Controller folder
 
-9. To see test case: symfony-docker-master\tests
+10. To see test case code please refer to symfony-docker-master\tests\ValidatorTest.php
 
 
 
